@@ -1,0 +1,33 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: rgb(190, 185, 196);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container
+{
+    width: 600px;
+    height: 800px;  
+    background-color: rgba(180, 248, 215, 0.575);  
+    margin: 20px auto;
+}
+
+.calculator
+{
+    width: 320px;
+    height: 520px;
+    background-color: antiquewhite;
+    margin: auto;
+    top: 20px;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 2px 50px 2px rgba(168, 228, 156, 0.658);
+
+}
