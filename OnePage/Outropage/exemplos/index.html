@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box-shadow</title>
+    <style>
+        .box{
+            width:150px;
+            height: 150px;
+            margin: 50px auto;
+            border: 1px solid green;
+        }
+        .shadow-interpolacao{
+            box-shadow: 15px 15px 20px red; 
+        }
+        .shadow-interpolacao:hover{
+            box-shadow: 15px 15px 0 green, -15px -15px green;
+            -webkit-transition : box-shadow ease-out 0.6s;
+            transition : box-shadow ease-out 0.6s;        
+        }
+        .shadow-interpolacao2{
+            box-shadow: 15px 15px 20px red, -15px -15px 20px green;
+        }
+        .shadow-interpolacao2:hover{
+            box-shadow:  15px -15px 0 green,  -15px 15px 20px green;
+            -webkit-transition : box-shadow ease-out 0.6s;
+            transition : box-shadow ease-out 0.6s;        
+        }
+    </style>
+</head>
+<body>
+    <div class="box shadow-interpolacao">
+        Box shadow
+    </div>   
+    <div class="box shadow-interpolacao2">
+        Box shadow  
+    </div>
+</body>
+</html>
